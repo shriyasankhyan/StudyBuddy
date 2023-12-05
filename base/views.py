@@ -112,7 +112,7 @@ def user_profile(request, pk):
     context = {'user': user, 'rooms':
     rooms, 'room_messages': room_message,
     'topics' : topics}
-    return render(request, 'base\profile.html', context)
+    return render(request, 'base/profile.html', context)
 
 # Decorator
 # The @login_required decorator in Django is used to protect views that require authentication. 
